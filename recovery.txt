@@ -1,0 +1,7 @@
+кладем recovery.img в папку с скриптом и используем команду
+
+распаковать "./unpack-MT65xx.pl recovery.img"
+меняем то что нужно, если перевод то я менял файл \RES\ui.xml
+удаляем оригинал recovery.img, так как мы будем делать свой
+и запаковываем командой
+запаковать "./repack-MT65xx.pl -recovery recovery.img-kernel.img recovery.img-ramdisk recovery.img"
